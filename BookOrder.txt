@@ -1,0 +1,70 @@
+public class User {
+    private String userId;
+    private String name;
+    private String email;
+
+    // Constructor, getters, and setters
+
+    // Methods related to user 
+}
+
+public class Book {
+    private String bookId;
+    private String title;
+    private String author;
+    private double price;
+
+    // Constructor, getters, and setters
+
+    // Methods related to book 
+}
+
+public class Order {
+    private String orderId;
+    private User user;
+    private List<Book> books;
+    private Date orderDate;
+    private boolean isPaid;
+
+    // Constructor, getters, and setters
+
+    // Methods related to orders
+}
+
+public class Payment {
+    private String paymentId;
+    private Order order;
+    private double amount;
+    private Date paymentDate;
+
+    // Constructor, getters, and setters
+
+    // Methods related to payment functionalities
+}
+
+public class Cart {
+    private User user;
+    private List<Book> books;
+
+    // Constructor, getters, and setters
+
+    public void addToCart(Book book) {
+        // Add a book to the cart
+    }
+
+    public void removeFromCart(Book book) {
+        // Remove a book from the cart
+    }
+
+    public void clearCart() {
+        // Clear the cart
+    }
+
+    public List<Book> getBooksInCart() {
+        // Get the list of books in the cart
+    }
+
+    public double calculateTotalPrice() {
+        // Calculate the total price of the books in the cart
+    }
+}
